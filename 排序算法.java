@@ -236,11 +236,11 @@ public class test1 {
        如果后面出现大于祖父节点数，那么将无法调整。
        */
 //        构建最大堆的过程就是最大元素上浮。
-        for (int i = len / 2 - 1; i >= 0; i--) {
+        for (int i = (len-1)/2; i >= 0; i--) {
             MaxHeap(arr, i, len);
         }
 //        将堆顶元素和最后的一个元素交换位置（取走堆顶元素），并调整最大堆（将堆顶元素下沉）。
-        for (int j = len - 1; j > 0; j--) {
+        for (int j = len ; j >= 0; j--) {
             swap(arr, 0, j);
             MaxHeap(arr, 0, j);
         }
