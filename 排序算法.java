@@ -207,6 +207,10 @@ public class test1 {
 
     //堆的维护
     public static void MaxHeap(int[] arr, int index, int len) {
+		
+		//父节点i的左子节点在位置{\displaystyle (2i+1)}{\displaystyle (2i+1)};
+		//父节点i的右子节点在位置{\displaystyle (2i+2)}{\displaystyle (2i+2)};
+		//子节点i的父节点在位置{\displaystyle floor((i-1)/2)}{\displaystyle floor((i-1)/2)};
         int largest = index;
         int leftSon = (2 * index) + 1;
         int rightSon = (2 * index) + 2;
